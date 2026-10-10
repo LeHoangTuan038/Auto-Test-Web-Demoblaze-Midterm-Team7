@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Báo cáo kiểm thử Demoblaze</title>
+  <style>
+    :root { color-scheme: light; font-family: "Segoe UI", Arial, sans-serif; color: #243247; background: #f3f6fa; }
+    body { margin: 0; padding: 32px; }
+    main { max-width: 1180px; margin: 0 auto; }
+    h1 { margin: 0 0 8px; color: #182d4d; }
+    .meta { color: #64748b; margin: 0 0 24px; }
+    .summary { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+    .metric { flex: 1 1 150px; min-width: 120px; padding: 14px 18px; border-radius: 8px; background: #fff; box-shadow: 0 1px 4px #182d4d18; }
+    .metric strong { display: block; font-size: 24px; }
+    .passed { color: #18794e; } .failed { color: #c62828; } .skipped { color: #9a6700; }
+    .table-wrap { overflow-x: auto; background: #fff; border-radius: 8px; box-shadow: 0 1px 4px #182d4d18; }
+    table { width: 100%; table-layout: fixed; border-collapse: collapse; }
+    th, td { padding: 12px 14px; border-bottom: 1px solid #e5eaf0; text-align: left; vertical-align: top; }
+    th { background: #182d4d; color: #fff; }
+    th:first-child, td:first-child { width: 110px; }
+    th:last-child, td:last-child { width: 100px; white-space: nowrap; }
+    tbody tr:nth-child(even) { background: #f7f9fc; }
+    td:first-child { font-weight: 700; white-space: nowrap; }
+    code { overflow-wrap: anywhere; }
+    details { margin-top: 8px; }
+    pre { max-width: 900px; overflow: auto; white-space: pre-wrap; color: #8b1e1e; }
+    @media (max-width: 640px) { body { padding: 16px; } th, td { padding: 9px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Báo cáo kiểm thử tự động — Demoblaze</h1>
+    <p class="meta">Selenium WebDriver + Python + pytest · Tạo lúc 2026-10-10 11:23:14 SE Asia Standard Time</p>
+    <section class="summary" aria-label="Tổng kết">
+      <div class="metric"><strong>16</strong>Tổng số test</div>
+      <div class="metric passed"><strong>16</strong>Đạt</div>
+      <div class="metric failed"><strong>0</strong>Lỗi</div>
+      <div class="metric skipped"><strong>0</strong>Bỏ qua</div>
+    </section>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Kết quả</th><th>Test case</th><th>Thời gian</th></tr></thead>
+        <tbody>
+          <tr><td class="status passed">Passed</td><td><code>tests/test_cart.py::test_product_catalog_is_displayed</code></td><td>5.82s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_cart.py::test_user_can_add_a_product_to_cart</code></td><td>12.92s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_cart.py::test_category_filter_shows_phones</code></td><td>8.28s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_cart.py::test_user_can_navigate_to_next_catalog_page</code></td><td>8.31s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_cart.py::test_removing_last_product_leaves_cart_empty</code></td><td>16.05s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_checkout.py::test_user_can_complete_purchase</code></td><td>39.38s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_checkout.py::test_purchase_requires_name</code></td><td>20.31s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_checkout.py::test_purchase_requires_credit_card</code></td><td>27.84s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_checkout.py::test_empty_cart_has_no_products_and_order_form_can_be_opened</code></td><td>11.75s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_checkout.py::test_cart_total_matches_sum_of_item_prices</code></td><td>17.05s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_login.py::test_sign_up_and_login_successfully</code></td><td>19.39s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_login.py::test_user_can_log_out</code></td><td>16.02s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_login.py::test_login_rejects_wrong_password</code></td><td>13.00s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_login.py::test_login_requires_username</code></td><td>12.03s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_login.py::test_login_requires_password</code></td><td>7.50s</td></tr><tr><td class="status passed">Passed</td><td><code>tests/test_login.py::test_sign_up_rejects_duplicate_username</code></td><td>15.00s</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
